@@ -5,7 +5,7 @@
 		<LangVersion>default</LangVersion>
 		<AssemblyName>$(MSBuildProjectName)</AssemblyName>
 		<TargetFramework>net8.0</TargetFramework>
-		<RootNamespace>Migs.EnumMetadata.Benchmarks</RootNamespace>
+		<RootNamespace>Smart.Enums.Benchmarks</RootNamespace>
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
@@ -14,7 +14,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\src\Migs.EnumMetadata\Migs.EnumMetadata.csproj" />
+	  <ProjectReference Include="..\..\src\Smart.Enums\Smart.Enums.csproj" />
 	</ItemGroup>
 
 </Project>

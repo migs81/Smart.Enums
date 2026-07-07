@@ -1,9 +1,9 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Order;
-using Migs.EnumMetadata.Benchmarks.TestData;
+using Smart.Enums.Benchmarks.TestData;
 
-namespace Migs.EnumMetadata.Benchmarks
+namespace Smart.Enums.Benchmarks
 {
     [MemoryDiagnoser]
     [RankColumn]
@@ -15,21 +15,21 @@ namespace Migs.EnumMetadata.Benchmarks
         [Benchmark]
         public void GetAttribute_WithCache_Benchmark()
         {
-            EnumMetadataConfig.UseCache = true;
-            _ = Enums.Color.Blue.GetAttribute<ColorAttribute>().Name;
+            SmartEnumConfig.UseCache = true;
+            _ = MyEnums.Color.Blue.GetAttribute<ColorAttribute>().Name;
         }
 
         [Benchmark]
         public void GetAttribute_WithoutCache_Benchmark()
         {
-            EnumMetadataConfig.UseCache = false;
-            _ = Enums.Color.Blue.GetAttribute<ColorAttribute>().Name;
+            SmartEnumConfig.UseCache = false;
+            _ = MyEnums.Color.Blue.GetAttribute<ColorAttribute>().Name;
         }
 
         [Benchmark]
         public void EnumToString_Benchmark()
         {
-            _ = Enums.Color.None.ToString();
+            _ = MyEnums.Color.None.ToString();
         }
     }
 }

@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace Migs.EnumMetadata.Benchmarks.TestData
+namespace Smart.Enums.Benchmarks.TestData
 {
     [AttributeUsage(AttributeTargets.Field)]
-    public class ColorAttribute : EnumMetadataAttribute
+    public class ColorAttribute : SmartEnumAttribute
     {
         public string Code { get; }
 

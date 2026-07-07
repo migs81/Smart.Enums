@@ -3,7 +3,7 @@
  */
 #if NETSTANDARD2_0
 using System;
-namespace Migs.EnumMetadata
+namespace Smart.Enums
 {
     [AttributeUsage(AttributeTargets.Parameter)]
     sealed class DisallowNullAttribute : Attribute {}

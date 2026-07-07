@@ -4,7 +4,7 @@
 		<TargetFrameworks>net6.0;net8.0;netstandard2.0</TargetFrameworks>
 		<Nullable>enable</Nullable>
 		<LangVersion>default</LangVersion>
-		<RootNamespace>Migs.EnumMetadata</RootNamespace>
+		<RootNamespace>Smart.Enums</RootNamespace>
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
 		<FileVersion>1.0.0.0</FileVersion>
 		<Version>1.0.1</Version>

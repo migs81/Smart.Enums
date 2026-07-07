@@ -1,24 +1,24 @@
 ﻿using System;
 
-namespace Migs.EnumMetadata
+namespace Smart.Enums
 {
     /// <summary>
     /// Attribute to append additional data to enumerations.
     /// </summary>
     /// <seealso cref="Attribute" />
     [AttributeUsage(AttributeTargets.Field)]
-    public class EnumMetadataAttribute : Attribute
+    public class SmartEnumAttribute : Attribute
     {
         public string Name { get; }
         public string Description { get; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="EnumMetadataAttribute"/> class.
+        /// Initializes a new instance of the <see cref="SmartEnumAttribute"/> class.
         /// </summary>
         /// <param name="name">The name.</param>
         /// <param name="description">The description.</param>
         /// <exception cref="ArgumentNullException"></exception>
-        public EnumMetadataAttribute(string name, string description)
+        public SmartEnumAttribute(string name, string description)
         {
             Name = name ?? throw new ArgumentNullException(nameof(name));
             Description = description ?? throw new ArgumentNullException(nameof(description));

@@ -1,7 +1,7 @@
 ﻿using System;
 using Xunit;
 
-namespace Migs.EnumMetadata.Tests
+namespace Smart.Enums.Tests
 {
     public class EnumMetadataTests
     {
@@ -12,7 +12,7 @@ namespace Migs.EnumMetadata.Tests
             const string name = "Test";
             const string description = "Just a test";
 
-            var attribute = new EnumMetadataAttribute(name, description);
+            var attribute = new SmartEnumAttribute(name, description);
 
             Assert.NotNull(attribute);
             Assert.Equal(name, attribute.Name);
@@ -25,7 +25,7 @@ namespace Migs.EnumMetadata.Tests
         [InlineData("", null)]
         public void Constructor_NullValue_ShouldThrowException(string name, string description)
         {
-            Assert.Throws<ArgumentNullException>(() => new EnumMetadataAttribute(name, description));
+            Assert.Throws<ArgumentNullException>(() => new SmartEnumAttribute(name, description));
         }
     }
 }

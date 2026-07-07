@@ -1,16 +1,16 @@
-﻿namespace Migs.EnumMetadata.Benchmarks.TestData
+﻿namespace Smart.Enums.Benchmarks.TestData
 {
-    public static class Enums
+    public static class MyEnums
     {
         public enum NameType
         {
-            [EnumMetadata(name: "Test", description: "Just a test")]
+            [SmartEnum(name: "Test", description: "Just a test")]
             FirstName = 0,
 
-            [EnumMetadata(name: "Test", description: "Just a test")]
+            [SmartEnum(name: "Test", description: "Just a test")]
             MiddleName,
 
-            [EnumMetadata(name: "Test", description: "Just a test")]
+            [SmartEnum(name: "Test", description: "Just a test")]
             LastName,
 
             FullName

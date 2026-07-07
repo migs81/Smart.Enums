@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Diagnostics;
 using BenchmarkDotNet.Running;
-using Migs.EnumMetadata;
-using Migs.EnumMetadata.Benchmarks;
-using Migs.EnumMetadata.Benchmarks.TestData;
+using Smart.Enums;
+using Smart.Enums.Benchmarks;
+using Smart.Enums.Benchmarks.TestData;
 
 _ = BenchmarkRunner.Run<Benchmarks>();
 
-EnumMetadataConfig.UseCache = false;
+SmartEnumConfig.UseCache = false;
 var stopwatch = Stopwatch.StartNew();
 
 for (var i = 0; i < 1_000_000; i++)
-    _ = Enums.NameType.FirstName.GetAttribute<EnumMetadataAttribute>().Name;
+    _ = MyEnums.NameType.FirstName.GetAttribute<SmartEnumAttribute>().Name;
 
 stopwatch.Stop();
 Console.WriteLine(stopwatch.ElapsedMilliseconds + " ms");
