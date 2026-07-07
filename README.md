@@ -1,4 +1,4 @@
-﻿# 📚 Migs.EnumMetadata
+﻿# 📚 Smart.Enums
 
 A lightweight C# library for extending enums with custom metadata properties.
 
@@ -22,11 +22,11 @@ It supports `.NET Standard 2.0`, `.NET 6.0`, and `.NET 8.0`.
 
 1. Clone the repository:
   ```bash
-   git clone https://github.com/migs81/Migs.EnumMetadata.git
+   git clone https://github.com/migs81/Smart.Enums.git
   ```
 2. Navigate to the project directory:
   ```bash
-   cd Migs.EnumMetadata
+   cd Smart.Enums
   ```
 3. Restore dependencies:
   ```bash
@@ -113,7 +113,7 @@ You can find it in the `benchmarks/` folder.
 
 1. Navigate to the benchmark project:
   ```bash
-   cd benchmarks/Migs.EnumMetadata
+   cd benchmarks/Smart.Enums
   ```
 2. Run the benchmarks using [BenchmarkDotNet](https://benchmarkdotnet.org/):
   ```bash
@@ -140,13 +140,13 @@ You can find it in the `benchmarks/` folder.
 ## 📂 Project Structure
 
 ```
-Migs.EnumMetadata/
+Smart.Enums/
 ├── src/
-│   ├── Migs.EnumMetadata/              # Core library
+│   ├── Smart.Enums/              # Core library
 ├── benchmarks/                       
-│   └── Migs.EnumMetadata.Benchmarks    # Benchmarks
+│   └── Smart.Enums.Benchmarks    # Benchmarks
 ├── tests/                       
-│   └── Migs.EnumMetadata.Tests         # Unit tests
+│   └── Smart.Enums.Tests         # Unit tests
 └── README.md                           # This file
 ```
 
